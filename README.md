@@ -1,5 +1,4 @@
 # TPeterW.github.io
-----
 Tao Peter Wang's [Personal Portfolio](http:tpeterw.github.io)
 
 
