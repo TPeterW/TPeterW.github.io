@@ -6,63 +6,57 @@
 		<title>TPW Studio</title>
 	</head>
 	
-	<body id="main" background="Resources\Images\background2.jpg">
-		<p id="MainTitle" class="cate">TPW Studio</p>
-		<p id="SubTitle">Tao Peter Wang</p>
-		<hr/>
-		<p /><p /><p />
+	<body id="main" background="Resources\Images\background2.jpg" >
         
-        <table>
-        
-            <!--First and only row-->
-            <tr>
-                <td id="cat_info">Tao Peter Wang</td>
-                <td id="cat_projects">Projects</td>
-            </tr>
-            
-        </table>
-        
-        <script type="text/javascript">
-            var nav_info = document.getElementById("cat_info");
-            var nav_projects = document.getElementById("cat_projects");
-            
-            function clickMe(){
-                alert("Yeah I'm bored");
-                alert("And with limited web skills");
-                alert("I am going to make this page look nicer though");
-                alert("Just after I finish all my homework >w<");
-            }
-        </script>
-        
-        <form>
-            <input type="button" value="Click Me" onclick="clickMe()"/>
-        </form>
-        
-        <h2>My Github</h2>
-        <a href="https://github.com/TPeterW"><img src="Resources\Images\ic_github.svg" width="100" height="100"/></a>
-        
-        <h2>Android Apps:</h2>
-        <h4 class="android_apps">Face Detective(How-old)</h4>
-        <a href="https://play.google.com/store/apps/details?id=com.peter.facedetective">
-  <img alt="Get it on Google Play"
-       src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
-</a>
-        
-        <!--WP8.1 Apps-->
-        <h2>Windows Phone Apps:</h2>
-        <h4 class="wp8_apps">Programmer Calc</h4>
-        <a href="https://www.microsoft.com/store/apps/9nblggh1qwsp"><img src="https://cmsresources.windowsphone.com/devcenter/en-us/legacy_v1/img/badgegenerator/English_wstore_cyan_258x67.png" alt="Download from Windows Store" /></a>
-        
-        <h4 class="wp8_apps">Mobile Shaver</h4>
-        <a href="https://www.microsoft.com/store/apps/9nblggh2jvgt"><img src="https://cmsresources.windowsphone.com/devcenter/en-us/legacy_v1/img/badgegenerator/English_wstore_cyan_258x67.png" alt="Download from Windows Store" /></a>
+        <!--Header-->
+		<div id="page_header" >
+            <p id="MainTitle" class="cate">TPW Studio</p>
+            <p id="SubTitle">Tao Peter Wang</p>
+<!--            <hr/>-->
+        </div>
         
         
-		<!--加入四个按钮-->
-		
-		<!--<div id="header"></div>
-		<div class="left"></div>
-		<div class="right"></div>
-		<div id="footer"></div>-->
+        <!--Content-->
+        <div id="page_content">
+            <!--JavaScript-->
+            <script type="text/javascript">
+                var nav_info = document.getElementById("cat_info");
+                var nav_projects = document.getElementById("cat_projects");
+
+                function clickMe(){
+                    alert("Yeah I'm bored");
+                    alert("And with limited web skills");
+                    alert("I am going to make this page look nicer though");
+                    alert("Just after I finish all my homework >w<");
+                }
+            </script>
+
+            <form>
+                <input type="button" value="Click Me" onclick="clickMe()"/>
+            </form>
+
+            <!--Github-->
+            <h2>My Github</h2>
+            <a href="https://github.com/TPeterW"><img src="Resources\Images\ic_github.svg" width="100" height="100"/></a>
+
+            <!--Android Apps-->
+            <h2>Android Apps:</h2>
+            <h4 class="android_apps">Face Detective(How-old)</h4>
+            <a href="https://play.google.com/store/apps/details?id=com.peter.facedetective">
+      <img alt="Get it on Google Play"
+           src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+    </a>
+
+            <!--WP8.1 Apps-->
+            <h2>Windows Phone Apps:</h2>
+            <h4 class="wp8_apps">Programmer Calc</h4>
+            <a href="https://www.microsoft.com/store/apps/9nblggh1qwsp"><img src="https://cmsresources.windowsphone.com/devcenter/en-us/legacy_v1/img/badgegenerator/English_wstore_cyan_258x67.png" alt="Download from Windows Store" /></a>
+
+            <h4 class="wp8_apps">Mobile Shaver</h4>
+            <a href="https://www.microsoft.com/store/apps/9nblggh2jvgt"><img src="https://cmsresources.windowsphone.com/devcenter/en-us/legacy_v1/img/badgegenerator/English_wstore_cyan_258x67.png" alt="Download from Windows Store" /></a>
+            </div>
+        
+        
 	</body>
 	
 </html>

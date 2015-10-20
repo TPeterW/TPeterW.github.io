@@ -1,3 +1,19 @@
+#page_header {
+    height: 7em;
+    width: 100%;
+    position: fixed;
+    margin-left: -0.5em;
+    margin-top: -7.5em;
+    background-color: transparent;
+}
+
+#page_content{
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    margin: 7em auto;
+}
+
 #MainTitle {
 	font-size: 3em;
 	font-family: Trebuchet MS, Calibri Light;
@@ -5,60 +21,15 @@
 	display: block;
 	padding-bottom: 0.5%;
 	margin: auto;
+    margin-left: 0.5em;
+    margin-top: 0.1em;
 }
 
 #SubTitle {
 	text-align: right;
 	font-family: Calibri;
-	margin-right: 10px;
+	margin-right: 20px;
 }
-
-div.cate {
-	display: inline-block;
-	width: 15em;
-	height: 5em;
-	text-align: center;
-	font-family: Giddyup Std, Blackadder ITC, Calibri Light;
-	font-size: 1em;
-	color: black;
-	border-radius: 10px;
-	/*clear: both;*/
-}
-
-div#personalInfo {
-	background-color: yellow;
-}
-
-div#photos {
-	background-color: blue;
-}
-
-div#works {
-	background-color: orangered;
-}
-
-div#contactMe {
-	background-color: lightcyan;
-}
-
-body#main {
-	background-image: Resources/24.jpg; 
-}
-
-#category {
-	width: 80em;
-	margin: auto;
-}
-
-/*鼠标放在按钮上的效果*/
-/*div#personalInfo:hover, div#photos:hover, div#works:hover, div#contactMe:hover{
-	width: 25em;
-	height: 7em;
-}
-
-#category:hover {
-	width: 85em;
-}*/
 
 body {
 	-webkit-background-size: cover;
@@ -69,39 +40,3 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-
-
-
-/*
-<!--Code Academy 借鉴-->
-div {
-	border-radius: 3px;
-}
-
-#header {
-	height: 50px;
-	background-color: #F38630;
-	margin-bottom: 10px;
-}
-
-.left {
-	height: 300px;
-	width: 800px;
-	background-color: #A7DBD8;
-	float: left;
-	margin-bottom: 10px;
-}
-
-.right {
-	height: 300px;
-	width: 450px;
-	background-color: #E0E4CC;
-	float: right;
-	margin-bottom: 10px;
-}
-
-#footer {
-	height: 50px;
-	background-color: #69D2E7;
-    clear: both;
-}*/
