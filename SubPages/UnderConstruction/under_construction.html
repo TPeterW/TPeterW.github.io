@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sorry</title>
+        
+        <style>
+            .msg {
+                font-size: 3em;
+                font-family: monospace;
+                color: white;
+                
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 10%;
+            }
+            
+            img {
+                height: 300px;
+                width: 300px;
+                align: middle;
+                
+                margin: 0 auto;
+            }
+        </style>
+	</head>
+	
+	<body id="main" style="background-color:red">
+        <center><div id="warning" class="msg">This site is still under construction<br/>Will return in 5 seconds</div></center>
+        <center><img src="../../Resources/Images/under_construction.png"/></center>
+        
+        <script type="text/javascript">
+            var remainingSeconds = 5;
+            var msg = document.getElementById("warning");
+            function countDown() {
+                remainingSeconds--;
+                msg.innerHTML = "This site is still under construction<br/>" + "Will return in " + remainingSeconds + " seconds";
+                if (remainingSeconds <= 0)
+                    history.back();
+            }
+            setInterval(countDown, 1000);
+        </script>
+	</body>
+	
+</html>
