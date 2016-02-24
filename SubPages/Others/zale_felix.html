@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <title>CS453 HW1</title>
+        
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+        
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <style>
+            .unknown {
+                width: 80px;
+                height: 120px;
+            }
+        </style>             
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>CS453 Computer Vision<br><small>HW1 Pinhole Camera</small></h1>
+                <p>Camera</p>
+                <div id="links">
+                    <a href="img/zale/1.jpg" title="1" data-gallery>
+                        <img src="img/zale/1.jpg" class="img-rounded unknown" alt="1">
+                    </a>
+                    <a href="img/zale/2.jpg" title="2" data-gallery>
+                        <img src="img/zale/2.jpg" class="img-rounded unknown" alt="2">
+                    </a>
+                    <a href="img/zale/3.jpg" title="3" data-gallery>
+                        <img src="img/zale/3.jpg" class="img-rounded unknown" alt="3">
+                    </a>
+                    <a href="img/zale/4.jpg" title="4" data-gallery>
+                        <img src="img/zale/4.jpg" class="img-rounded unknown" alt="4">
+                    </a>
+                    <a href="img/zale/5.jpg" title="5" data-gallery>
+                        <img src="img/zale/5.jpg" class="img-rounded unknown" alt="5">
+                    </a>
+                </div>
+                
+                <br><br>
+                
+                <p>Image & Photo</p>
+                <div id="links">
+                    <a href="img/zale/6.JPG" title="6" data-gallery>
+                        <img src="img/zale/6.JPG" class="img-rounded unknown" alt="6">
+                    </a>
+                    <a href="img/zale/7.JPG" title="7" data-gallery>
+                        <img src="img/zale/7.JPG" class="img-rounded unknown" alt="7">
+                    </a>
+                    <a href="img/zale/8.JPG" title="8" data-gallery>
+                        <img src="img/zale/8.JPG" class="img-rounded unknown" alt="8">
+                    </a>
+                    <a href="img/zale/9.JPG" title="9" data-gallery>
+                        <img src="img/zale/9.JPG" class="img-rounded unknown" alt="9">
+                    </a>
+                    <a href="img/zale/10.JPG" title="10" data-gallery>
+                        <img src="img/zale/10.JPG" class="img-rounded unknown" alt="10">
+                    </a>
+                    <a href="img/zale/11.JPG" title="11" data-gallery>
+                        <img src="img/zale/11.JPG" class="img-rounded unknown" alt="11">
+                    </a>
+                    <a href="img/zale/12.JPG" title="12" data-gallery>
+                        <img src="img/zale/12.JPG" class="img-rounded unknown" alt="12">
+                    </a>
+                    <a href="img/zale/13.JPG" title="13" data-gallery>
+                        <img src="img/zale/13.JPG" class="img-rounded unknown" alt="13">
+                    </a>
+                </div>             
+                
+            </div>
+        </div>
+        
+        
+        <!--Image Gallery: https://github.com/blueimp/Bootstrap-Image-Gallery-->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="lead text-info text-center">by Zale and Yanwei</p>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="js/bootstrap-image-gallery.min.js"></script>
+    </body>
+</html>
