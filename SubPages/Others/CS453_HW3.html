@@ -15,6 +15,10 @@
                 width: 810px;
                 height: 540px;
             }
+            .big {
+                width: 972px;
+                height: 648px;
+            }
         </style>             
     </head>
     
@@ -31,8 +35,9 @@
                 
                 <br><br>
                 
+                <h4>The images are processed through gaussian smoothing, sigma = 2</h4>
                 <p>Marr-Hildreth</p>
-                <a href="img/hw3/peter_marr7.png" title="Peter Marr-Hildreth" data-gallery>
+                <a href="img/hw3/peter_marr7.png" title="Peter Marr-Hildreth 7" data-gallery>
                     <img src="img/hw3/peter_marr7.png" class="hardcode" alt="Peter Marr-Hildreth">
                 </a>
                 
@@ -40,13 +45,51 @@
                 
                 <p>Canny</p>
                 <div id="links">
-                    <a href="img/hw3/peter_canny-3-6.5.png" title="Peter Canny" data-gallery>
+                    <a href="img/hw3/peter_canny-3-6.5.png" title="Peter Canny 3 6.5" data-gallery>
                         <img src="img/hw3/peter_canny-3-6.5.png" class="hardcode" alt="Peter Canny">
                     </a>
                 </div>
                 
+                <br><br><br><br><br>
+                
+                <h4>The biggest difference between Marr-Hildreth and Canny detection is that Marr-Hildreth focuses on more details but also picks up much more noise, it is shown more clearly thourgh the following images: </h4>
+                
+                <p>Photo of my desk</p>
+                <a href="img/hw3/peter_desk_original.jpg" target="_blank">
+                    <button type="button" class="btn btn-primary">Open in New Tab</button>
+                </a><br><br>
+                <div id="links">
+                    <a href="img/hw3/peter_desk_original.jpg" title="Peter Desk Original" data-gallery>
+                        <img src="img/hw3/peter_desk_original.jpg" class="hardcode" alt="Peter Desk">
+                    </a>
+                </div>
+                
+                <br><br>
+                
+                <p>Marr-Hildreth <small>(To be honest, I think this looks more realistic)</small></p>
+                <a href="img/hw3/peter_desk_marr.png" target="_blank">
+                    <button type="button" class="btn btn-primary">Open in New Tab</button>
+                </a><br><br>
+                <div id="links">
+                    <a href="img/hw3/peter_desk_marr.png" title="Peter Desk Marr 20" data-gallery>
+                        <img src="img/hw3/peter_desk_marr.png" class="hardcode" alt="Peter Desk Marr">
+                    </a>
+                </div>
+                
+                <br><br>
+                
+                <p>Canny</p>
+                <a href="img/hw3/peter_desk_canny.png" target="_blank">
+                    <button type="button" class="btn btn-primary">Open in New Tab</button>
+                </a><br><br>
+                <div id="links">
+                    <a href="img/hw3/peter_desk_canny.png" title="Peter Desk Canny 1.8 3.5" data-gallery>
+                        <img src="img/hw3/peter_desk_canny.png" class="hardcode" alt="Peter Desk Canny">
+                    </a>
+                </div>
             </div>
         </div>
+        
         
         
         <!--Image Gallery: https://github.com/blueimp/Bootstrap-Image-Gallery-->
