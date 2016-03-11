@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <title>CS453 HW3</title>
+        
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+        
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <style>
+            .hardcode {
+                width: 810px;
+                height: 540px;
+            }
+        </style>             
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>CS453 Computer Vision<br><small>HW3 Edge Detection</small></h1>
+                <p>Original Images</p>
+                <div id="links">
+                    <a href="img/hw3/peter_original.png" title="Peter Origianl Image" data-gallery>
+                        <img src="img/hw3/peter_original.png" class="hardcode" alt="Peter Original Image">
+                    </a>
+                </div>
+                
+                <br><br>
+                
+                <p>Marr-Hildreth</p>
+                <a href="img/hw3/peter_marr7.png" title="Peter Marr-Hildreth" data-gallery>
+                    <img src="img/hw3/peter_marr7.png" class="hardcode" alt="Peter Marr-Hildreth">
+                </a>
+                
+                <br><br><br>
+                
+                <p>Canny</p>
+                <div id="links">
+                    <a href="img/hw3/peter_canny-3-6.5.png" title="Peter Canny" data-gallery>
+                        <img src="img/hw3/peter_canny-3-6.5.png" class="hardcode" alt="Peter Canny">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!--Image Gallery: https://github.com/blueimp/Bootstrap-Image-Gallery-->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="lead text-info text-center">by Felix and Peter</p>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="js/bootstrap-image-gallery.min.js"></script>
+    </body>
+</html>
