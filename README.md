@@ -1,17 +1,3 @@
-# TPeterW.github.io
-Tao Peter Wang's [Personal Portfolio](http:tpeterw.github.io)
+# [TPW Studio](http://tpeterw.github.io/)
 
-
-----
-##Personal Info
-
-----
-##Tech Blog
-
-----
-##Projects
-    /* Windows & Android Platforms */
-    /* Completed apps and beta tests */
-
-----
-##Literary
+Personal home page for Tao Peter Wang. This page is a display of the works, personal interests and other miscellaneous.

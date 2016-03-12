@@ -1,39 +1,239 @@
 <!DOCTYPE html>
-<html lang="en_US">
-	<head>
-		<link type="text/css" rel="stylesheet" href="index.css" />
-        <link type="text/css" rel="stylesheet" href="common.css" />
-		<meta charset="UTF-8">
-		<title>Tao Peter Wang</title>
-	</head>
-	
-	<body id="main" background="Resources/Images/index_background.jpg" >
-        <div id="page_title">TPW Studio</div>
-        
-        <!--Header-->
-        <ul id="nav_bar">
-            <li class="nav_bar_item"><a href="index.html">Home</a></li>
-            <li class="nav_bar_item"><a href="SubPages/UnderConstruction/under_construction.html">Works</a></li>
-            <li class="nav_bar_item"><a href="SubPages/UnderConstruction/under_construction.html">Blog</a></li>
-            <li class="nav_bar_item"><a href="https://github.com/TPeterW">Github</a></li>
-            <li class="nav_bar_item" style="float:right"><a href="SubPages/UnderConstruction/under_construction.html">About Me</a></li>
-        </ul>
-        
-        <!--Content-->
-        <div id="page_content">
-            <h2>Android Apps:</h2>
-            <h4 class="android_apps">Face Detective(How-old)</h4>
-            <a href="https://play.google.com/store/apps/details?id=com.peter.facedetective&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1" target="_blank"><img class="play_badges" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a>
+<html lang="en">
 
-            <h2>Windows Phone Apps:</h2>
-            <h4 class="wp8_apps">Programmer Calc</h4>
-            <a href="https://www.microsoft.com/store/apps/9nblggh1qwsp?ocid=badge" target="_blank"><img src="https://assets.windowsphone.com/d86ab9b4-2f3d-4a94-92f8-1598073e7343/English_Get_it_Win_10_InvariantCulture_Default.png" srcset="https://assets.windowsphone.com/5d2bd562-d242-4538-85f4-857d6457404b/English_Get_it_Win_10_InvariantCulture_Default.png 2x"  alt="Get it on Windows 10" /></a>
+<head>
 
-            <h4 class="wp8_apps">Mobile Shaver</h4>
-            <a href="https://www.microsoft.com/store/apps/9nblggh2jvgt?ocid=badge" target="_blank"><img src="https://assets.windowsphone.com/8d997df3-5b6e-496c-88b3-e3f40117c8fd/English-get-it-from-MS_InvariantCulture_Default.png" srcset="https://assets.windowsphone.com/0100c7e5-1455-40bc-a351-b77d2801ad5a/English_get-it-from-MS_InvariantCulture_Default.png 2x"  alt="Get it from Microsoft" /></a>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tao Peter Wang @ Github</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="http://tpeterw.github.io">Tao Peter Wang</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#intro">⬆ Top</a>
+                    </li>
+                    <li>
+                        <a href="#works">Works</a>
+                    </li>
+                    <li>
+                        <a href="SubPages/UnderConstruction/under_construction.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        
-        
-	</body>
-	
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="intro"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1 style="color:#C4FFFF">Tao Peter Wang</h1>
+                        <h3 style="color:#C4FFFF">Middlebury College '18</h3>
+                        <hr style="color:#C4FFFF" class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/taopeterwang" class="btn btn-default btn-lg twitter-background" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tpeterw" class="btn btn-default btn-lg black-background" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/taopeterwang" class="btn btn-default btn-lg linkedin-background" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    
+    <!-- Page Content -->
+    <!-- Exibition of a few pieces of work -->
+
+	<a name="works"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Mobile Apps<br><small>TPW Studio</small><br>Android & WP</h2>
+                    <p class="lead">I am an independent developer on Android and Windows Mobile platform and am crazy about open source libraries and frameworks. Check out <a href="#">my apps</a> right now!</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/mobile-app.png" alt="App Screenshot">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Gadgets & Toolkit<br>脑洞大开</h2>
+                    <p class="lead">I sometimes write various types of tools to ease the life of myself and other people.<br><br><a href="https://github.com/TPeterW/course-registration">Course Registration</a>, Wikipedia Crawler, a new <a href="https://github.com/TPeterW/PeteSort">sorting algorithm</a> and so on...</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/course-reg.png" alt="Course Registration Client Screenshot">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Class Projects<br>Cool~</h2>
+                    <p class="lead">In the Network classes, we implemented many types of protocols, and in Computer Vision, we built a <a href="SubPages/Others/CS453_HW1.html" target="_blank">pinhole camera</a> and implemented different types of <a href="SubPages/Others/CS453_HW3.html" target="_blank">edge detections</a>. And many other things~</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/class-proj.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	<a  name="about"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 style="color:#C4FFFF">More About Me:</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/taopeterwang" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tpeterw" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/taopeterwang" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; TPW Studio 2016. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
