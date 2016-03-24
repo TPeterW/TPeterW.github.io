@@ -26,7 +26,7 @@
                 <p>
                     The affine transformation works well when two conditions are satisfied:<br>
                     1. When the panorama is really far away, because when the view is really close, the stretch would be too big for sift to bear. This is demonstrated in Fail Case A.<br>
-                    2. When the panorama images do not have enough common points, this can be caused in two ways, either the two images just don't overlap that much, or that they overlap at areas that are essentially homogenous, or have the same colour, which is demonstrated in Fail Case B.
+                    2. When the panorama images have many detailed crossovers, as many and as humanly in distinguishable as possible. The opposite, i.e. do not have enough common points, can be caused in two ways, either the two images just don't overlap that much, or that they overlap at areas that are essentially homogenous, or have the same colour, which is demonstrated in Fail Case B.
                 <p>
 
                 <br>
@@ -53,6 +53,7 @@
                 <br><br><br>
 
                 <h3>Fail Case B <small><a href="res/hall.zip" download>Download original images</a></small></h3>
+                <small>The part on the right has much more details and better effect, opposite to the homogeneous white on the left<br><br></small>
                 <div id="links">
                     <a href="img/hw5/hall-bilinear-blend.jpg" target="_blank">
                         <button type="button" class="btn btn-primary">Bilinear Blend</button>
