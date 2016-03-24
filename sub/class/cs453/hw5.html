@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <title>CS453 HW5</title>
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <style>
+            .hardcode {
+                width: 810px;
+                height: 540px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>CS453 Computer Vision<br><small>HW5 Image Stitching<h3>a.k.a. Panorama</h3></small></h1>
+                <h2>Basically</2>
+                <p>
+                    The affine transformation works well when two conditions are satisfied:<br>
+                    1. When the panorama is really far away, because when the view is really close, the stretch would be too big for sift to bear. This is demonstrated in Fail Case A.<br>
+                    2. When the panorama images do not have enough common points, this can be caused in two ways, either the two images just don't overlap that much, or that they overlap at areas that are essentially homogenous, or have the same colour, which is demonstrated in Fail Case B.
+                <p>
+
+                <br>
+                <small>Most of the images used in this report utilised either bilinear interpolation or nearest neighbour<br></small>
+                <small>Full sets of test images are in the testimgs folder in hw5 directory</small>
+
+                <h3>Fail Case A <small><a href="res/close.zip" download>Click to download original images</a></small></h3>
+                <div id="links">
+                    <a href="img/hw5/close-bilinear-blend.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Bilinear Blend</button>
+                    </a><br><br>
+                    <a href="img/hw5/close-bilinear-blend.jpg" title="Biliear Blend" data-gallery>
+                        <img src="img/hw5/close-bilinear-blend.jpg" class="img-responsive" alt="Close Bilinear Blend">
+                    </a><br><br>
+
+                    <a href="img/hw5/close-bilinear-over.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Bilinear Over</button>
+                    </a><br><br>
+                    <a href="img/hw5/close-bilinear-over.jpg" title="Bilinear Over" data-gallery>
+                        <img src="img/hw5/close-bilinear-over.jpg" class="img-responsive" alt="Close Bilinear Over">
+                    </a>
+                </div>
+
+                <br><br><br>
+
+                <h3>Fail Case B <small><a href="res/hall.zip" download>Click to download original images</a></small></h3>
+                <div id="links">
+                    <a href="img/hw5/hall-bilinear-blend.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Bilinear Blend</button>
+                    </a><br><br>
+                    <a href="img/hw5/hall-bilinear-blend.jpg" title="Bilinear Blend" data-gallery>
+                        <img src="img/hw5/hall-bilinear-blend.jpg" class="img-responsive" alt="Hall Bilinear Blend">
+                    </a><br><br>
+
+                    <a href="img/hw5/hall-bilinear-over.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Bilinear Over</button>
+                    </a><br><br>
+                    <a href="img/hw5/hall-bilinear-over.jpg" title="Bilinear Over" data-gallery>
+                        <img src="img/hw5/hall-bilinear-over.jpg" class="img-responsive" alt="Hall Bilinear Over">
+                    </a>
+                </div>
+
+                <br><br><br>
+
+                <p>Here are some other cases that worked relatively well</p>
+                <h3>Class <small><a href="res/class.zip" download>Click to download original images</a></small></h3>
+                <small>I told all of them to freeze and they just didn't<br><br></small>
+                <div id="links">
+                    <a href="img/hw5/class-blend.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Neighbour Blend</button>
+                    </a><br><br>
+                    <a href="img/hw5/class-blend.jpg" title="Neighbour Blend" data-gallery>
+                        <img src="img/hw5/class-blend.jpg" class="img-responsive" alt="Class Neighbour Blend">
+                    </a><br><br>
+
+                    <a href="img/hw5/class-over.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Neighbour Over</button>
+                    </a><br><br>
+                    <a href="img/hw5/class-over.jpg" title="Neighbour Over" data-gallery>
+                        <img src="img/hw5/class-over.jpg" class="img-responsive" alt="Class Neighbour Over">
+                    </a>
+                </div>
+
+                <br><br><br>
+
+                <h3>Yosemite <small><a href="res/yosemite.zip" download>Click to download original images</a></small></h3>
+                <small>This is an example of having many detailed points to be linked between two images<br><br></small>
+                <div id="links">
+                    <a href="img/hw5/yosemite-blend.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Neighbour Blend</button>
+                    </a><br><br>
+                    <a href="img/hw5/yosemite-blend.jpg" title="Neighbour Blend" data-gallery>
+                        <img src="img/hw5/yosemite-blend.jpg" class="img-responsive" alt="Yosemite Neighbour Blend">
+                    </a><br><br>
+
+                    <a href="img/hw5/yosemite-over.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Neighbour Over</button>
+                    </a><br><br>
+                    <a href="img/hw5/yosemite-over.jpg" title="Neighbour Over" data-gallery>
+                        <img src="img/hw5/yosemite-over.jpg" class="img-responsive" alt="Yosemite Neighbour Over">
+                    </a>
+                </div>
+
+                <br><br><br>
+
+                <h3>Rainier <small><a href="res/rainier.zip" download>Click to download original images</a></small></h3>
+                <small>This is to compared the difference between bilinear and closest neighbour interpolation<br><br></small>
+                <div id="links">
+                    <a href="img/hw5/rainier-bilinear-blend.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Bilinear Blend</button>
+                    </a><br><br>
+                    <a href="img/hw5/rainier-bilinear-blend.jpg" title="Bilinear Blend" data-gallery>
+                        <img src="img/hw5/rainier-bilinear-blend.jpg" class="img-responsive" alt="Rainier Bilinear Blend">
+                    </a><br><br>
+
+                    <a href="img/hw5/rainier-bilinear-over.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Bilinear Over</button>
+                    </a><br><br>
+                    <a href="img/hw5/rainier-bilinear-over.jpg" title="Bilinear Over" data-gallery>
+                        <img src="img/hw5/rainier-bilinear-over.jpg" class="img-responsive" alt="Rainier Bilinear Over">
+                    </a><br><br>
+
+                    <a href="img/hw5/rainier-blend.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Neighbour Blend</button>
+                    </a><br><br>
+                    <a href="img/hw5/rainier-blend.jpg" title="Neighbour Blend" data-gallery>
+                        <img src="img/hw5/rainier-blend.jpg" class="img-responsive" alt="Rainier Neighbour Blend">
+                    </a><br><br>
+
+                    <a href="img/hw5/rainier-over.jpg" target="_blank">
+                        <button type="button" class="btn btn-primary">Neighbour Over</button>
+                    </a><br><br>
+                    <a href="img/hw5/rainier-over.jpg" title="Neighbour Over" data-gallery>
+                        <img src="img/hw5/rainier-over.jpg" class="img-responsive" alt="Rainier Neighbour Over">
+                    </a><br><br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Image Gallery: https://github.com/blueimp/Bootstrap-Image-Gallery-->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="lead text-info text-center">by Tao Peter Wang</p>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="js/bootstrap-image-gallery.min.js"></script>
+    </body>
+</html>
