@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100vh;
+    min-height: 100vh;
+    
+    background-image: url(imgs/page-background.jpg);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "machine";
+    src: url(fonts/PressStart2P-Regular.ttf) format("truetype");
+}
+
+.cover {
+    height: 100%;
+}
+
+.hyperlink {
+    text-decoration: none;
+}
+
+.hyperlink:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.use-font {
+    font-family: "machine", sans-serif, fantasy;
+    font-size: 12px;
+}
+
+/* partly from https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6 */
+/* basically does the navigation bar stuff */
+.navbar {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    font-family: "machine";
+    font-size: 10px;
+    height: 30px;
+    justify-content: space-around;
+}
+
+.navbar>li {
+    cursor: pointer;
+    flex-basis: 10em;
+    transition: 0.2s;
+}
+
+.navbar>li:nth-child(2) {
+    margin-left: auto;
+}
+
+.navbar>li:hover {
+    color: yellow;
+}
+
+#slogan {
+    font-size: 1.5em;
+}
+
+/* footer */
+.sticky-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 5%;
+    width: 95%;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    
+    vertical-align: bottom;
+    background-color: transparent;
+    
+    bottom: 0;
+}
+
+#footer-items {
+/*    this flex here doesn't work*/
+/*    display: flex;*/
+    height: auto;
+    justify-content: space-between;
+}
+
+#footer-items>a, i {
+    vertical-align: bottom;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#footer-items>a:hover, i:hover {
+    color: yellow;
+}
+
+#logo {
+    float: left;
+}
