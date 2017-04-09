@@ -20,6 +20,7 @@ body {
 
 .cover {
     height: 100%;
+    width: 100%;
 }
 
 .hyperlink {
@@ -36,7 +37,7 @@ body {
     font-size: 12px;
 }
 
-/* partly from https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6 */
+/* code parially from https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6 */
 /* basically does the navigation bar stuff */
 .navbar {
     align-items: center;
@@ -64,10 +65,6 @@ body {
     color: yellow;
 }
 
-#slogan {
-    font-size: 1.5em;
-}
-
 /* footer */
 .sticky-footer {
     display: flex;
@@ -82,6 +79,32 @@ body {
     background-color: transparent;
     
     bottom: 0;
+}
+
+#main-content {
+    margin-top: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#slogan {
+    margin: 0 auto;
+    font-size: 1.2em;
+    height: 5em;
+    line-height: 5em;
+}
+
+#email-form {
+    margin: 0 auto;
+    height: 3em;
+    line-height: 3em;
+}
+
+#cliche {
+    margin: 0 auto;
+    font-size: 0.3em;
+    height: 1em;
+    line-height: 1em;
 }
 
 #footer-items {
