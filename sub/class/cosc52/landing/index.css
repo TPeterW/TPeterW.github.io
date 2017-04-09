@@ -23,8 +23,13 @@ body {
     width: 100%;
 }
 
+.no-bullet {
+    list-style-type: none;
+}
+
 .hyperlink {
     text-decoration: none;
+    color: inherit;
 }
 
 .hyperlink:visited {
@@ -35,6 +40,7 @@ body {
 .use-font {
     font-family: "machine", sans-serif, fantasy;
     font-size: 12px;
+    color: whitesmoke;
 }
 
 /* code parially from https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6 */
@@ -44,7 +50,6 @@ body {
     background-color: transparent;
     display: flex;
     flex-flow: row nowrap;
-    list-style-type: none;
     font-family: "machine";
     font-size: 10px;
     height: 30px;
@@ -65,26 +70,11 @@ body {
     color: yellow;
 }
 
-/* footer */
-.sticky-footer {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 5%;
-    width: 95%;
-    justify-content: space-between;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    
-    vertical-align: bottom;
-    background-color: transparent;
-    
-    bottom: 0;
-}
-
+/* main part */
 #main-content {
     margin-top: 5%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
 }
 
 #slogan {
@@ -96,34 +86,106 @@ body {
 
 #email-form {
     margin: 0 auto;
-    height: 3em;
-    line-height: 3em;
+    height: 5em;
+    line-height: 5em;
+    
+    background-color: transparent;
 }
 
-#cliche {
-    margin: 0 auto;
+#email-form>input {
+    width: 25em;
+    height: 3.5em;
+    font-family: "machine";
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#email-form>button {
+    color: white!important;
+    background-color: #42c299;
+    border-radius: 5px;
+    width: 12em;
+    height: 4em;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 1px #888888;
+    
+    outline: none;
+    border-style: hidden;
+    
+    font-weight: 700;
+    font-family: "machine";
+    
+    box-sizing: border-box;
+    position: relative;
+}
+
+#email-form>button:hover {
+    box-shadow: inset 0 -3px rgba(0,0,0,.2);
+}
+
+#email-form>button:after {
+    
+}
+
+.cliche {
+    margin: 2em auto;
     font-size: 0.3em;
     height: 1em;
     line-height: 1em;
 }
 
+/* links */
+#links-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    
+    bottom: 2em;        /* height of footer */
+    width: 100%;
+    position: fixed;
+}
+
+/* footer */
+.sticky-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 2em;
+    width: 95%;
+    line-height: 2em;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    
+    background-color: #F3FD59;
+    
+    bottom: 0;
+    position: fixed;
+}
+
+.sticky-footer>a {
+    height: 2em;
+    line-height: 2em;
+}
+
 #footer-items {
 /*    this flex here doesn't work*/
 /*    display: flex;*/
-    height: auto;
+    flex-flow: row nowrap;
+    height: 2em;
     justify-content: space-between;
 }
 
 #footer-items>a, i {
-    vertical-align: bottom;
+    vertical-align: middle;
     cursor: pointer;
     transition: 0.2s;
+    color: black;
 }
 
 #footer-items>a:hover, i:hover {
     color: yellow;
-}
-
-#logo {
-    float: left;
 }
