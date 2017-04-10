@@ -60,6 +60,7 @@ body {
     cursor: pointer;
     flex-basis: 10em;
     transition: 0.2s;
+    text-align: center;
 }
 
 .navbar>li:nth-child(2) {
@@ -82,14 +83,17 @@ body {
     font-size: 1.2em;
     height: 5em;
     line-height: 5em;
+    text-align: center;
 }
 
+/* input box and stuff */
 #email-form {
+    position: relative;
     margin: 0 auto;
     height: 5em;
     line-height: 5em;
     
-    background-color: transparent;
+    z-index: 10;
 }
 
 #email-form>input {
@@ -102,6 +106,8 @@ body {
     
     padding-left: 1em;
     padding-right: 1em;
+    
+    box-shadow: 1px 1px 1px #888888;
 }
 
 #email-form>button {
@@ -127,15 +133,12 @@ body {
     box-shadow: inset 0 -3px rgba(0,0,0,.2);
 }
 
-#email-form>button:after {
-    
-}
-
 .cliche {
     margin: 2em auto;
     font-size: 0.3em;
     height: 1em;
     line-height: 1em;
+    text-align: center;
 }
 
 /* links */
@@ -145,8 +148,11 @@ body {
     justify-content: space-around;
     
     bottom: 2em;        /* height of footer */
+    height: 8em;
     width: 100%;
     position: fixed;
+    
+    
 }
 
 /* footer */
@@ -188,4 +194,41 @@ body {
 
 #footer-items>a:hover, i:hover {
     color: yellow;
+}
+
+/* resize screen */
+@media only screen and (max-width: 640px) {
+    #navbar-product, #navbar-pricing, #navbar-support {
+        display: none;
+    }
+    
+    #navbar-signin {
+        border-style: solid;
+    }
+    
+    #slogan {
+        font-size: 0.5em;
+    }
+    
+    .cliche {
+        font-size: 0.01em;
+    }
+    
+    #links-container {
+        flex-direction: column;
+    }
+    
+    .sub-links {
+        visibility: collapse;
+    }
+    
+    #email-form>input {
+        width: 15em;
+        height: 1.5em;
+    }
+
+    #email-form>button {
+        width: 8em;
+        height: 2em;
+    }
 }
